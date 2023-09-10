@@ -37,12 +37,14 @@ try {
 }
 
 try {
+
     //factory Class tests 
     let f = new Factory("Germany", "Elon Tusk")
     f.createVehicle(new Vehicle("Ford", "F-150",2018, 19823,"123123"))
     f.paintVehicle("123123", "green")
     f.createVehicle(new Vehicle("Chevy", "Silverado",2019, 11234,"98081"))
     f.paintVehicle("98081", "red")
+    f.listVehicles ()
     console.log("Test case 2 factory: ", f)
     console.log("Test conditions", 
         f.location === "Germany" ,
